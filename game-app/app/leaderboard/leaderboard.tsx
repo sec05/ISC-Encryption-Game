@@ -11,7 +11,7 @@ export const Leaderboard: React.FC = () => {
   // Function to fetch leaderboard data
   const getData = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5555/leaderboard");
+      const response = await fetch("http://sevansco.pythonanywhere.com/leaderboard");
       if (response.ok) {
         const data = await response.json();
         // Sort players before updating state

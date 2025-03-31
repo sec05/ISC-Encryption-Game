@@ -14,7 +14,7 @@ export const Welcome = () => {
   const handlePlay = async () => {
     if (name.trim()) {
     try {
-        const response = await fetch("http://localhost:5555/leaderboard", {
+        const response = await fetch("http://sevansco.pythonanywhere.com/leaderboard", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

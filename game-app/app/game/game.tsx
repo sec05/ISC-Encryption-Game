@@ -32,7 +32,7 @@ export const Game: React.FC = () => {
     if (!level) return;
 
     try {
-      const response = await fetch(`http://127.0.0.1:5555/challenge/${level}`);
+      const response = await fetch(`https://sevansco.pythonanywhere.com/challenge/${level}`);
       if (!response.ok) throw new Error("Failed to fetch challenge");
 
       const data = await response.json();
@@ -50,7 +50,7 @@ export const Game: React.FC = () => {
 
   const handleSubmit = async () => {
     try {
-        const response = await fetch(`http://127.0.0.1:5555/challenge/${challengeID}`, {
+        const response = await fetch(`http://sevansco.pythonanywhere.com/challenge/${challengeID}`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json", 

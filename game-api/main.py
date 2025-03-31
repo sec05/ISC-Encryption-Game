@@ -5,7 +5,7 @@ from random import randint
 from sympy import isprime, mod_inverse
 app = Flask(__name__)
 fake = Faker(['en_US'])
-CORS(app, supports_credentials=True,origins=["http://localhost:5555"],)  # Enable CORS for all routes automatically
+CORS(app, supports_credentials=True)  # Enable CORS for all routes automatically
 
 # Sample leaderboard and active challenges
 leaderboard = []
