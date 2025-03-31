@@ -50,7 +50,7 @@ export const Game: React.FC = () => {
 
   const handleSubmit = async () => {
     try {
-        const response = await fetch(`http://sevansco.pythonanywhere.com/challenge/${challengeID}`, {
+        const response = await fetch(`https://sevansco.pythonanywhere.com/challenge/${challengeID}`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json", 
